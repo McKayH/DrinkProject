@@ -19,11 +19,13 @@ void Open_File_And_Get_Data(){
 	if(!userFile){return;}else{
 		std::string line;
 		while(std::getline(userFile, line)){
+			std::cout<< line <<"\n";
 			oneTwoCombine.push_back(line);
 		}
 		for(int i = 0; i < oneTwoCombine.size(); i++){
 			if(i != oneTwoCombine.size()-1){
-				NamesNAmount.insert({oneTwoCombine.at(i),oneTwoCombine.at(i+1)});
+				std::cout<<"\n user: "<< oneTwoCombine.at(i) << " Goal: " << oneTwoCombine.at(i+1) << "\n";
+				NamesNAmount.insert({oneTwoCombine.at(i),oneTwoCombine.at(i+=1)});
 			}
 		}
 	}
