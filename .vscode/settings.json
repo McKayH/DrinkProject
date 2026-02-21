@@ -1,0 +1,8 @@
+{
+    "C_Cpp.autocomplete": "disabled",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "editor.suggest.selectionMode": "never",
+    "editor.quickSuggestions": {
+        "other": "off"
+    }
+}
